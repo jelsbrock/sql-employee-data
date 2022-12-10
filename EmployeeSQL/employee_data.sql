@@ -13,12 +13,14 @@ CREATE TABLE Departments (
 
 CREATE TABLE DepartmentEmployees (
     emp_no INT NOT NULL,
-    dept_no CHAR(4) NOT NULL
+    dept_no CHAR(4) NOT NULL,
+    PRIMARY KEY (emp_no, dept_no)
 );
 
 CREATE TABLE DepartmentManager (
     dept_no CHAR(4) NOT NULL,
-    emp_no INT NOT NULL
+    emp_no INT NOT NULL,
+    PRIMARY KEY (emp_no)
 );
 
 CREATE TABLE Employees (
@@ -34,7 +36,8 @@ CREATE TABLE Employees (
 
 CREATE TABLE Salaries (
     emp_no INT NOT NULL,
-    salary INT NOT NULL
+    salary INT NOT NULL,
+    PRIMARY KEY (emp_no)
 );
 
 CREATE TABLE Titles (
@@ -43,17 +46,19 @@ CREATE TABLE Titles (
     PRIMARY KEY (title_id)
 );
 
-ALTER TABLE DepartmentEmployees
-ADD FOREIGN KEY (dept_no) REFERENCES Departments(dept_no);
+ALTER TABLE Departments
+ADD FOREIGN KEY (dept_no) REFERENCES DepartmentEmployees(dept_no);
 
 ALTER TABLE DepartmentEmployees
+ADD FOREIGN KEY (dept_no) REFERENCES Departments(dept_no),
 ADD FOREIGN KEY (emp_no) REFERENCES Employees(emp_no);
 
 ALTER TABLE Salaries
 ADD FOREIGN KEY (emp_no) REFERENCES Employees(emp_no);
 
 ALTER TABLE Employees 
-ADD FOREIGN KEY (emp_title) REFERENCES Titles(title_id);
+ADD FOREIGN KEY (emp_title) REFERENCES Titles(title_id),
+ADD FOREIGN KEY (emp_no) REFERENCES Salaries(emp_no);
 
 
 SELECT Employees.emp_no, Employees.last_name, Employees.first_name, Employees.sex, Salaries.salary
