@@ -1,7 +1,13 @@
 # SQL Employee Data
-Using SQL to create and update tables
 
-One Paragraph of project description goes here
+Pewlett Hackard (a fictional company) has just hired you and the first project you are asked to do is get info on people who worked at the company during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
+
+For this project, you’ll first create an ERD (layout) of how the tables are connected using primary and foreign keys.
+
+(insert ERD image)
+
+Then, you'll import the CSV files into a SQL database and answer questions posed by Pewlett Hackard leadership by querying the data.
+
 
 # Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
