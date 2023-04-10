@@ -12,7 +12,7 @@ The program used to create the ERD was QuickDBD.
 The analysis was done using postgres and Jupyter Notebook.
 
 # Results
-The total amount of unique records in the data was just over 300,000. Using these records and knowledge of SQL, the table was widdled down to answer specific questions about the records. The list below shows the questions and the amount of records (in parentheses) for each one that satisified the requirements. The SQL prompts used to get these outputs are included in 
+The total amount of unique records in the data was just over 300,000. Using these records and knowledge of SQL, the table was widdled down to answer specific questions about the records. The list below shows the questions and the amount of records (in parentheses) for each one that satisified the requirements. The SQL prompts used to get these outputs are included in the 'EmployeeSQL' folder.
 
 List the employee number, last name, first name, sex, and salary of each employee (300,042)
 
