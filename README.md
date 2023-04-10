@@ -3,7 +3,8 @@ Pewlett Hackard (a fictional company) has just hired you and the first project y
 
 For this project, you’ll first create an ERD (layout) of how the tables are connected using primary and foreign keys.
 
-(insert ERD image)
+<img width="620" alt="employee data" src="https://user-images.githubusercontent.com/111451303/231011529-9160e2df-3a68-4892-b992-43d1981f66c3.png">
+
 
 Then, you'll import the CSV files into a SQL database and answer questions posed by Pewlett Hackard leadership by querying the data.
 
