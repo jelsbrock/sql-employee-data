@@ -5,7 +5,6 @@ For this project, you’ll first create an ERD (layout) of how the tables are co
 
 <img width="620" alt="employee data" src="https://user-images.githubusercontent.com/111451303/231011529-9160e2df-3a68-4892-b992-43d1981f66c3.png">
 
-
 Then, you'll import the CSV files into a SQL database and answer questions posed by Pewlett Hackard leadership by querying the data.
 
 # Getting Started
@@ -17,9 +16,9 @@ The total amount of records in the data was just over 300,000. Using the main ta
 
 List the employee number, last name, first name, sex, and salary of each employee (300,042)
 
-List the first name, last name, and hire date for the employees who were hired in 1986. (
+List the first name, last name, and hire date for the employees who were hired in 1986. (36,150)
 
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
+List the manager of each department along with their department number, department name, employee number, last name, and first name. (
 
 List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 
