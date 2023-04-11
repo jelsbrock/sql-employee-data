@@ -7,11 +7,11 @@ For this project, you’ll first create an ERD (layout) of how the tables are co
 
 Then, you'll import the CSV files into a SQL database and answer questions posed by Pewlett Hackard leadership by querying the data.
 
-# Getting Started
+## Getting Started
 The program used to create the ERD was QuickDBD.
 The analysis was done using postgres and Jupyter Notebook.
 
-# Results
+## Results
 The total amount of unique records in the data was just over 300,000. Using these records and knowledge of SQL, the table was widdled down to answer specific questions about the records. The list below shows the questions and the amount of records (in parentheses) for each one that satisified the requirements. The SQL prompts used to get these outputs are included in the 'EmployeeSQL' folder.
 
 List the employee number, last name, first name, sex, and salary of each employee (300,042)
@@ -46,5 +46,5 @@ List the frequency counts, in descending order, of all the employee last names (
 
 <img width="135" alt="emp data question 8" src="https://user-images.githubusercontent.com/111451303/231016991-35b27612-e728-455f-ad33-10298053f802.png">
 
-# Summary
+## Summary
 SQL is a great tool to use when dealing with such a large dataset. With only a few lines of code, I was able to get answers to all the questions in a matter of minutes once I got all the records into one table. It's evident that there are many practical ways SQL can be used in a business setting whether it's internal - like salary and hire date in the examples above, or external - like subscriber info to a specific service. While looking at the data above it was clear that this fictional company had a massive budget and huge scope based on the amount of employees and departments. Additionally, they liked to hire people named Hercules!
